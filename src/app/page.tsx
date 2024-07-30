@@ -1,5 +1,6 @@
 import Header from "@/components/organisms/Header";
 import HeroSection from "@/components/organisms/HeroSection";
+import TopCreators from "@/components/organisms/TopCreators";
 import TrendingSection from "@/components/organisms/TrendingSection";
 import Image from "next/image";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <TrendingSection />
+      <TopCreators />
     </main>
   );
 }
