@@ -2,8 +2,16 @@ import Image from 'next/image';
 import React from 'react';
 import rocket from '@/assets/icons/RocketLaunchPurple.svg'
 import localFont from 'next/font/local'
+import CreatorsComponent from '../molecules/CreatorsComponent';
 const WorkSansRegular = localFont({ src: '../../assets/fonts/WorkSans-Regular.ttf' })
 const WorkSans = localFont({ src: '../../assets/fonts/WorkSans-SemiBold.ttf' })
+import avatar1 from '@/assets/images/Avatar1.png'
+import avatar2 from '@/assets/images/Avatar2.png'
+import avatar3 from '@/assets/images/Avatar3.png'
+import avatar4 from '@/assets/images/Avatar4.png'
+import avatar5 from '@/assets/images/Avatar5.png'
+import avatar6 from '@/assets/images/Avatar6.png'
+
 
 const TopCreators = () => {
     return (
@@ -26,6 +34,18 @@ const TopCreators = () => {
                         <Image src={rocket} alt='rocket' />
                     </button>
                 </div>
+            </div>
+
+            <div className='grid grid-cols-4 gap-10 mt-14'>
+                <CreatorsComponent index={1} avatar={avatar1} name='Keepitreal' sales={34.53} />
+                <CreatorsComponent index={2} avatar={avatar2} name='Keepitreal' sales={34.53} />
+                <CreatorsComponent index={3} avatar={avatar3} name='Keepitreal' sales={34.53} />
+                <CreatorsComponent index={4} avatar={avatar4} name='Keepitreal' sales={34.53} />
+                <CreatorsComponent index={5} avatar={avatar5} name='Keepitreal' sales={34.53} />
+                <CreatorsComponent index={6} avatar={avatar6} name='Keepitreal' sales={34.53} />
+                <CreatorsComponent index={7} avatar={avatar1} name='Keepitreal' sales={34.53} />
+                <CreatorsComponent index={8} avatar={avatar2} name='Keepitreal' sales={34.53} />
+
             </div>
         </div>
     );
