@@ -13,7 +13,7 @@ import foxProfile from '@/assets/images/foxMini.png'
 
 const TrendingSection = () => {
     return (
-        <div className={`${WorkSans.className} TrendingSection w-full text-white mt-20`}>
+        <div className={`${WorkSans.className} TrendingSection w-full text-white mt-36`}>
             <h2 className='TrendingSection__title text-3xl mb-3'>
                 Trending Collection
             </h2>

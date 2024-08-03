@@ -16,7 +16,7 @@ import camera from '@/assets/icons/Camera.svg'
 
 const CategoriesSection = () => {
     return (
-        <div className='CategoriesSection text-white w-full mt-32'>
+        <div className='CategoriesSection text-white w-full mt-36'>
             <h3 className={`${WorkSans.className} text-4xl`}>
                 Browse Categories
             </h3>

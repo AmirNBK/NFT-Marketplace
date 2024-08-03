@@ -15,7 +15,7 @@ import avatar6 from '@/assets/images/Avatar6.png'
 
 const TopCreators = () => {
     return (
-        <div className='TopCreators text-white w-full mt-32'>
+        <div className='TopCreators text-white w-full mt-36'>
             <div className='TopCreators__header flex flex-row items-end justify-between'>
                 <div className='TopCreators__header__titleDescription flex flex-col gap-3'>
                     <h3 className={`${WorkSans.className} text-4xl`}>
