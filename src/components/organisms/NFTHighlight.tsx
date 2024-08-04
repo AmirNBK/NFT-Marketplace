@@ -7,6 +7,7 @@ import localFont from 'next/font/local'
 const WorkSansRegular = localFont({ src: '../../assets/fonts/WorkSans-Regular.ttf' })
 const WorkSans = localFont({ src: '../../assets/fonts/WorkSans-SemiBold.ttf' })
 import eye from '@/assets/icons/Eye.svg'
+import AuctionTimer from '../molecules/AuctionTimer';
 
 const NFTHighlight = () => {
     return (
@@ -27,8 +28,8 @@ const NFTHighlight = () => {
                 </button>
             </div>
 
-            <div>
-
+            <div className='absolute right-[10%] top-[55%]'>
+                <AuctionTimer />
             </div>
 
         </div>
