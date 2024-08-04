@@ -1,37 +1,51 @@
-import React from 'react';
+'use client';
+import React, { useEffect, useState } from 'react';
 
 interface TimeUnit {
-  value: number;
-  label: string;
+    value: number;
+    label: string;
 }
 
 const AuctionTimer: React.FC = () => {
-  const timeUnits: TimeUnit[] = [
-    { value: 59, label: 'Hours' },
-    { value: 59, label: 'Minutes' },
-    { value: 59, label: 'Seconds' },
-  ];
+    const [timerSecond, setTimerSecond] = useState(59)
+    const [timerMinute, setTimerMinute] = useState(59)
+    const [timerHour, setTimerHour] = useState(59)
 
-  return (
-    <div className="flex flex-col p-8 text-white rounded-3xl bg-neutral-700 bg-opacity-50 min-w-[240px] w-[295px] max-md:px-5">
-      <div className="text-xs leading-none">Auction ends in:</div>
-      <div className="flex gap-2.5 items-start mt-2.5 w-full whitespace-nowrap">
-        {timeUnits.map((unit, index) => (
-          <React.Fragment key={unit.label}>
-            <div className="flex flex-col flex-1 shrink basis-0">
-              <div className="text-4xl font-bold leading-tight capitalize">
-                {unit.value}
-              </div>
-              <div className="flex-1 mt-1.5 text-xs leading-none">{unit.label}</div>
+    const timeUnits: TimeUnit[] = [
+        { value: timerHour, label: 'Hours' },
+        { value: timerMinute, label: 'Minutes' },
+        { value: timerSecond, label: 'Seconds' },
+    ];
+
+    setTimeout(() => {
+        if (timerSecond > 0) {
+            setTimerSecond(timerSecond - 1)
+        }
+        else {
+            setTimerSecond(59)
+            setTimerMinute(timerMinute - 1)
+        }
+    }, 1000);
+    return (
+        <div className="flex flex-col p-8 text-white rounded-3xl bg-neutral-700 bg-opacity-50 min-w-[240px] w-[295px] max-md:px-5">
+            <div className="text-xs leading-none">Auction ends in:</div>
+            <div className="flex gap-2.5 items-start mt-2.5 w-full whitespace-nowrap">
+                {timeUnits.map((unit, index) => (
+                    <React.Fragment key={unit.label}>
+                        <div className="flex flex-col flex-1 shrink basis-0">
+                            <div className="text-4xl font-bold leading-tight capitalize">
+                                {unit.value.toString().padStart(2, '0')}
+                            </div>
+                            <div className="flex-1 mt-1.5 text-xs leading-none">{unit.label}</div>
+                        </div>
+                        {index < timeUnits.length - 1 && (
+                            <div className="text-3xl font-bold leading-snug capitalize">:</div>
+                        )}
+                    </React.Fragment>
+                ))}
             </div>
-            {index < timeUnits.length - 1 && (
-              <div className="text-3xl font-bold leading-snug capitalize">:</div>
-            )}
-          </React.Fragment>
-        ))}
-      </div>
-    </div>
-  );
+        </div>
+    );
 };
 
 export default AuctionTimer;

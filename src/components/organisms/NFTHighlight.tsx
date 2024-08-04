@@ -28,7 +28,7 @@ const NFTHighlight = () => {
                 </button>
             </div>
 
-            <div className='absolute right-[10%] top-[55%]'>
+            <div className='absolute right-[10%] top-[65%]'>
                 <AuctionTimer />
             </div>
 
