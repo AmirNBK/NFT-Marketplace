@@ -7,9 +7,9 @@ interface TimeUnit {
 }
 
 const AuctionTimer: React.FC = () => {
-    const [timerSecond, setTimerSecond] = useState(59)
-    const [timerMinute, setTimerMinute] = useState(59)
-    const [timerHour, setTimerHour] = useState(59)
+    const [timerSecond, setTimerSecond] = useState(59);
+    const [timerMinute, setTimerMinute] = useState(59);
+    const [timerHour, setTimerHour] = useState(59);
 
     const timeUnits: TimeUnit[] = [
         { value: timerHour, label: 'Hours' },
@@ -17,15 +17,34 @@ const AuctionTimer: React.FC = () => {
         { value: timerSecond, label: 'Seconds' },
     ];
 
-    setTimeout(() => {
-        if (timerSecond > 0) {
-            setTimerSecond(timerSecond - 1)
-        }
-        else {
-            setTimerSecond(59)
-            setTimerMinute(timerMinute - 1)
-        }
-    }, 1000);
+    useEffect(() => {
+        const timerIntervalSecond = setInterval(() => {
+            setTimerSecond(prevSecond => {
+                if (prevSecond > 0) {
+                    return prevSecond - 1;
+                } else {
+                    return 59; 
+                }
+            });
+        }, 1000);
+
+        return () => clearInterval(timerIntervalSecond); 
+    }, []);
+
+    useEffect(() => {
+        const timerIntervalMin = setInterval(() => {
+            setTimerMinute(prevMin => {
+                if (prevMin > 0) {
+                    return prevMin - 1;
+                } else {
+                    return 59; 
+                }
+            });
+        }, 60000);
+
+        return () => clearInterval(timerIntervalMin); 
+    }, []);
+
     return (
         <div className="flex flex-col p-8 text-white rounded-3xl bg-neutral-700 bg-opacity-50 min-w-[240px] w-[295px] max-md:px-5">
             <div className="text-xs leading-none">Auction ends in:</div>
