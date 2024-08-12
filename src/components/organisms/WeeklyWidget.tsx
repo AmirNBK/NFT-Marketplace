@@ -21,7 +21,7 @@ const WeeklyWidget = () => {
                     Get exclusive promotions & updates straight to your inbox.
                 </p>
 
-                <SubscribeForm placeholder='Enter your email here' bgColor='#A259FF'/>
+                <SubscribeForm placeholder='Enter your email here' bgColor='#A259FF' hasIcon/>
             </div>
         </div>
     );

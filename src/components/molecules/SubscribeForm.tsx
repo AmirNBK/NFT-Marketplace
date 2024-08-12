@@ -5,7 +5,7 @@ import localFont from 'next/font/local'
 const WorkSansRegular = localFont({ src: '../../assets/fonts/WorkSans-Regular.ttf' })
 const WorkSans = localFont({ src: '../../assets/fonts/WorkSans-SemiBold.ttf' })
 
-const SubscribeForm = ({ placeholder, bgColor }: { placeholder: string, bgColor: string }) => {
+const SubscribeForm = ({ placeholder, bgColor, hasIcon }: { placeholder: string, bgColor: string, hasIcon: boolean }) => {
     return (
         <div className={` ${WorkSansRegular.className} SubscribeForm relative w-[95%]`}>
             <input placeholder={placeholder} className='rounded-2xl bg-white text-[#2B2B2B] placeholder:text-[#2B2B2B]  w-full
@@ -14,7 +14,7 @@ const SubscribeForm = ({ placeholder, bgColor }: { placeholder: string, bgColor:
                 <p className={`${WorkSans.className}`}>
                     Subscribe
                 </p>
-                <Image src={email} alt='email icon' />
+                {hasIcon && <Image src={email} alt='email icon' />}
             </button>
         </div>
     );
