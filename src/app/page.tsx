@@ -6,6 +6,7 @@ import HowItWorks from "@/components/organisms/HowItWorks";
 import NFTHighlight from "@/components/organisms/NFTHighlight";
 import TopCreators from "@/components/organisms/TopCreators";
 import TrendingSection from "@/components/organisms/TrendingSection";
+import WeeklyWidget from "@/components/organisms/WeeklyWidget";
 import Image from "next/image";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <NFTHighlight />
       <div className="px-28 w-full">
         <HowItWorks />
+        <WeeklyWidget />
       </div>
     </main>
   );
