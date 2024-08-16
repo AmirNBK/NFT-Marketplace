@@ -19,7 +19,7 @@ const HeroSection = () => {
                 <p className={`${WorkSansRegular.className} text-xl`}>
                     NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.
                 </p>
-                <PrimaryButton text='Get Started' icon={RocketLaunch} />
+                <PrimaryButton text='Get Started' icon={RocketLaunch} hasIcon />
                 <div className='HeroSection__leftSide__Statistics flex flex-row justify-between'>
                     <Statistics statsNum={240} title='Total Sale' />
                     <Statistics statsNum={100} title='Auctions' />
