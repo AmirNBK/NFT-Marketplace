@@ -23,7 +23,7 @@ const Header = () => {
                         </p>
                     )
                 })}
-                <PrimaryButton text='Sign Up' icon={user} hasIcon />
+                <PrimaryButton text='Sign Up' icon={user} hasIcon href={'/signup'} />
 
             </div>
         </div>
