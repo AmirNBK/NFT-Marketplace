@@ -4,7 +4,6 @@ import localFont from 'next/font/local'
 import AuthInput from '../molecules/AuthInput';
 const WorkSansRegular = localFont({ src: '../../assets/fonts/WorkSans-Regular.ttf' })
 const WorkSans = localFont({ src: '../../assets/fonts/WorkSans-SemiBold.ttf' })
-const spaceMono = localFont({ src: '../../assets/fonts/SpaceMono-Bold.ttf' })
 import user from '@/assets/icons/UserGray.svg'
 import email from '@/assets/icons/EmailGray.svg'
 import lock from '@/assets/icons/LockKey.svg'
