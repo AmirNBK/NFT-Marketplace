@@ -25,7 +25,7 @@ export default function Home() {
         <HowItWorks />
         <WeeklyWidget />
       </div>
-      <div className="mt-28">
+      <div className="mt-28 w-full">
         <Footer />
       </div>
 
