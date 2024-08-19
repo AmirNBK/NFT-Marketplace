@@ -10,6 +10,7 @@ import ArtistInfo from './ArtistInfo';
 import PrimaryButton from '../atoms/PrimaryButton';
 import copy from '@/assets/icons/Copy.svg'
 import plus from '@/assets/icons/Plus.svg'
+import ArtistArts from './ArtistArts';
 
 const SingleArtistInfoSection = () => {
 
@@ -22,7 +23,7 @@ const SingleArtistInfoSection = () => {
     ]
 
     return (
-        <div className='SingleArtistInfoSection w-full my-6'>
+        <div className='SingleArtistInfoSection w-full mt-6'>
             <div className='SingleArtistInfoSection__bgPic w-full'>
                 <Image src={bgPic} alt='background' className=' w-full h-80 object-cover' unoptimized />
             </div>
@@ -40,10 +41,13 @@ const SingleArtistInfoSection = () => {
                         <p>
                             Follow
                         </p>
-                        <Image src={plus} alt='pus'/>
+                        <Image src={plus} alt='plus' />
                     </button>
                 </div>
+            </div>
 
+            <div className=' w-full bg-[#2B2B2B] pt-8'>
+                <ArtistArts />
             </div>
         </div>
     );
