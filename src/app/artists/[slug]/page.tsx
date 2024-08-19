@@ -1,15 +1,9 @@
 import Footer from "@/components/organisms/Footer";
 import Header from "@/components/organisms/Header";
+import SingleArtist from "@/components/pages/SingleArtist";
 
-export default function SingleArtist() {
+export default function SingleArtistPage() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between pt-8  bg-[#2B2B2B]">
-            <div className="px-28 w-full">
-                <Header />
-            </div>
-
-            <Footer />
-
-        </main>
+        <SingleArtist />
     );
 }
