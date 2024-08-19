@@ -12,7 +12,7 @@ const SingleArtistTemplate = () => {
 
             <SingleArtistInfoSection />
 
-            {/* <Footer /> */}
+            <Footer />
 
         </main>
     );

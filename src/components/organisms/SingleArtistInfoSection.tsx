@@ -19,17 +19,19 @@ const SingleArtistInfoSection = () => {
     ]
 
     return (
-        <div className='SingleArtistInfoSection w-full mt-6'>
+        <div className='SingleArtistInfoSection w-full my-6'>
             <div className='SingleArtistInfoSection__bgPic w-full'>
                 <Image src={bgPic} alt='background' className=' w-full h-80 object-cover' unoptimized />
             </div>
 
-            <div className='SingleArtistInfoSection__infos bg-[#2B2B2B] flex flex-row items-start'>
-                <div className='SingleArtistInfoSection__infos__leftSide'>
+            <div className='SingleArtistInfoSection__infos bg-[#2B2B2B] flex flex-row items-start px-24'>
+                <div className='SingleArtistInfoSection__infos__leftSide relative'>
                     <ArtistInfo profilePic={pic} name='Animakid' volume={'250k'} soldNfts={50} followers={300} bio="The internet's friendliest designer kid."
                         links={socialMedias}
                     />
                 </div>
+
+                
             </div>
         </div>
     );
