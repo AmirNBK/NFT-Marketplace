@@ -5,15 +5,15 @@ const WorkSansRegular = localFont({ src: '../../assets/fonts/WorkSans-Regular.tt
 const WorkSans = localFont({ src: '../../assets/fonts/WorkSans-SemiBold.ttf' })
 const spaceMono = localFont({ src: '../../assets/fonts/SpaceMono-Regular.ttf' })
 
-const NFTComponent = ({ image, title, creatorPic, creator, price, bid }:
-    { image: StaticImageData, title: string, creatorPic: StaticImageData, creator: string, price: string | number, bid: string | number }) => {
+const NFTComponent = ({ image, title, creatorPic, creator, price, bid, bgColor = 'rgb(59,59,59)' }:
+    { image: StaticImageData, title: string, creatorPic: StaticImageData, creator: string, price: string | number, bid: string | number, bgColor?: string }) => {
     return (
-        <div className='NFTComponent rounded-2xl flex flex-col'>
+        <div className='NFTComponent rounded-2xl flex flex-col text-white '>
             <div className='NFTComponent__image w-full rounded-t-2xl'>
                 <Image src={image} alt='image' className='rounded-t-2xl' />
             </div>
 
-            <div className='NFTComponent__content bg-[rgb(59,59,59)] p-5 rounded-b-2xl'>
+            <div className={`NFTComponent__content bg-[${bgColor}] p-5 rounded-b-2xl`}>
                 <div className='NFTComponent__content__creator flex flex-col gap-2'>
                     <div>
                         <h3 className={`${WorkSans.className} text-2xl`}>

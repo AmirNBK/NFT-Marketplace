@@ -28,7 +28,7 @@ const SingleArtistInfoSection = () => {
                 <Image src={bgPic} alt='background' className=' w-full h-80 object-cover' unoptimized />
             </div>
 
-            <div className='SingleArtistInfoSection__infos bg-[#2B2B2B] flex flex-row items-start px-24 w-full justify-between'>
+            <div className='SingleArtistInfoSection__infos bg-[#2B2B2B] flex flex-row items-start px-24 w-full justify-between pb-10'>
                 <div className='SingleArtistInfoSection__infos__leftSide relative'>
                     <ArtistInfo profilePic={pic} name='Animakid' volume={'250k'} soldNfts={50} followers={300} bio="The internet's friendliest designer kid."
                         links={socialMedias}
@@ -46,7 +46,7 @@ const SingleArtistInfoSection = () => {
                 </div>
             </div>
 
-            <div className=' w-full bg-[#2B2B2B] pt-8'>
+            <div className=' w-full bg-[#2B2B2B] pt-8 border-t border-[#3B3B3B]'>
                 <ArtistArts />
             </div>
         </div>
