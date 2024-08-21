@@ -29,7 +29,7 @@ const NFTHighlight = () => {
             </div>
 
             <div className='absolute right-[10%] top-[65%]'>
-                <AuctionTimer />
+                <AuctionTimer bgColor='neutral-700' />
             </div>
 
         </div>
