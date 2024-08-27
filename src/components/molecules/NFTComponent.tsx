@@ -13,7 +13,7 @@ const NFTComponent = ({ image, title, creatorPic, creator, price, bid, bgColor =
                 <Image src={image} alt='image' className='rounded-t-2xl' />
             </div>
 
-            <div className={`NFTComponent__content bg-[${bgColor}] p-5 rounded-b-2xl`}>
+            <div className={`NFTComponent__content p-5 rounded-b-2xl`} style={{ backgroundColor: `${bgColor}` }}>
                 <div className='NFTComponent__content__creator flex flex-col gap-2'>
                     <div>
                         <h3 className={`${WorkSans.className} text-2xl`}>

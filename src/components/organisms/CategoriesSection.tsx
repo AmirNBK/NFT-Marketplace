@@ -1,6 +1,5 @@
 import React from 'react';
 import localFont from 'next/font/local'
-const WorkSansRegular = localFont({ src: '../../assets/fonts/WorkSans-Regular.ttf' })
 const WorkSans = localFont({ src: '../../assets/fonts/WorkSans-SemiBold.ttf' })
 import categoryPic1 from '@/assets/images/category1.png'
 import categoryPic2 from '@/assets/images/category2.png'
