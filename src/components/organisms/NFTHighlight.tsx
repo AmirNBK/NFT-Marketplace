@@ -4,7 +4,6 @@ import image from '@/assets/images/NFT Highlight.png'
 import ProfileBadge from '../atoms/ProfileBadge';
 import avatar from '@/assets/images/Avatar1.png'
 import localFont from 'next/font/local'
-const WorkSansRegular = localFont({ src: '../../assets/fonts/WorkSans-Regular.ttf' })
 const WorkSans = localFont({ src: '../../assets/fonts/WorkSans-SemiBold.ttf' })
 import eye from '@/assets/icons/Eye.svg'
 import AuctionTimer from '../molecules/AuctionTimer';
