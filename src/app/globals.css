@@ -18,12 +18,50 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+
+
+  .css-heg063-MuiTabs-flexContainer {
+    justify-content: center;
+  }
+
+  .css-1aquho2-MuiTabs-indicator {
+    background-color: #858584;
+  }
+
+  .MuiButtonBase-root {
+    flex: 1;
+    color: #858584;
+
+  }
+
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: #fff;
+
+    .amount {
+      background: #858584;
+    }
+  }
+
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    .amount {
+      background: #3B3B3B;
+    }
+  }
+
+  .css-19kzrtu {
+    background: #3B3B3B;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 90px;
+  }
+
+  .css-8atqhb {
+    width: 100%;
+    border-bottom: 2px solid #2B2B2B;
+  }
 }
 
 @layer utilities {

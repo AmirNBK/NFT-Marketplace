@@ -4,9 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import localFont from 'next/font/local'
-import CreatorsComponent from '../molecules/CreatorsComponent';
 const WorkSansRegular = localFont({ src: '../../assets/fonts/WorkSans-Regular.ttf' })
-const WorkSans = localFont({ src: '../../assets/fonts/WorkSans-SemiBold.ttf' })
 const spaceMono = localFont({ src: '../../assets/fonts/SpaceMono-Regular.ttf' })
 import image1 from '@/assets/images/Image1.png'
 import image2 from '@/assets/images/Image2.png'
@@ -119,48 +117,7 @@ const ArtistArts = () => {
 
 
 
-            <style>
-                {
-                    `
-                    .css-heg063-MuiTabs-flexContainer { 
-                        justify-content: center;
-                    }
-                    .css-1aquho2-MuiTabs-indicator {
-                        background-color : #858584;
-                    }
-                    .MuiButtonBase-root {
-                        flex : 1;
-                        color : #858584;
 
-                    }
-                    .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
-                        color : #fff;
-
-                        .amount {
-                        background : #858584;
-                        }
-                    }
-
-                    .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
-                      .amount {
-                        background : #3B3B3B;
-                        }
-                    }
-
-                    .css-19kzrtu {
-                        background : #3B3B3B;
-                        display: flex;
-    justify-content: center;
-    padding-bottom : 90px;
-                    }
-
-             .css-8atqhb {
-    width: 100%;
-    border-bottom: 2px solid #2B2B2B;
-}
-                    `
-                }
-            </style>
         </div>
     );
 };
