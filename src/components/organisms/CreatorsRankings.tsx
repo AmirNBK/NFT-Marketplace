@@ -6,13 +6,15 @@ import Box from '@mui/material/Box';
 import localFont from 'next/font/local'
 import NFTComponent from '../molecules/NFTComponent';
 import image1 from '@/assets/images/Image1.png'
-import image2 from '@/assets/images/Image2.png'
-import image3 from '@/assets/images/Image3.png'
-import image4 from '@/assets/images/Image7.png'
-import image5 from '@/assets/images/Image8.png'
+import avatar1 from '@/assets/images/Avatar1.png'
+import avatar2 from '@/assets/images/Avatar2.png'
+import avatar3 from '@/assets/images/Avatar3.png'
+import avatar4 from '@/assets/images/Avatar4.png'
+import avatar5 from '@/assets/images/Avatar5.png'
+import avatar6 from '@/assets/images/Avatar6.png'
 import image6 from '@/assets/images/Image9.png'
 import fox from '@/assets/images/foxMini.png'
-const spaceMono = localFont({ src: '../../assets/fonts/SpaceMono-Regular.ttf' })
+import RankingsTable from './RankingsTable';
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -27,6 +29,53 @@ const CreatorsRankings = () => {
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setValue(newValue);
     };
+
+
+    const artistData = [
+        {
+            rank: 1,
+            artist: "Jaydon Ekstrom Bothman",
+            change: "+1.41%",
+            nftsSold: 602,
+            volume: "12.4 ETH",
+            avatar: avatar1,
+        },
+        {
+            rank: 2,
+            artist: "Artist Two",
+            change: "-0.5%",
+            nftsSold: 450,
+            volume: "10.0 ETH",
+            avatar: avatar2,
+        },
+        {
+            rank: 3,
+            artist: "Artist Three",
+            change: "+2.0%",
+            nftsSold: 300,
+            volume: "8.5 ETH",
+            avatar: avatar3,
+        },
+    ];
+
+    const artistData2 = [
+        {
+            rank: 1,
+            artist: "Jaydon Ekstrom Bothman",
+            change: "+1.41%",
+            nftsSold: 602,
+            volume: "12.4 ETH",
+            avatar: avatar1,
+        },
+        {
+            rank: 2,
+            artist: "Artist Two",
+            change: "-0.5%",
+            nftsSold: 450,
+            volume: "10.0 ETH",
+            avatar: avatar2,
+        },
+    ];
 
     function CustomTabPanel(props: TabPanelProps) {
         const { children, value, index, ...other } = props;
@@ -51,7 +100,7 @@ const CreatorsRankings = () => {
         };
     }
     return (
-        <div className='creatorsRankings '>
+        <div className='creatorsRankings w-full'>
             <Box sx={{ width: '100%' }}>
                 <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                     <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
@@ -88,29 +137,23 @@ const CreatorsRankings = () => {
                     </Tabs>
                 </Box>
                 <CustomTabPanel value={value} index={0}>
-
-                    <div className=' grid grid-cols-3 mt-14 gap-10 w-10/12'>
-                        <NFTComponent bgColor='#2B2B2B' image={image1} title='Distant Galaxy' creatorPic={fox} creator='MoonDancer' price={1.63} bid={0.33} />
-                        <NFTComponent bgColor='#2B2B2B' image={image2} title='Life On Edena' creatorPic={fox} creator='NebulaKid' price={1.63} bid={0.33} />
-                        <NFTComponent bgColor='#2B2B2B' image={image3} title='AstroFiction' creatorPic={fox} creator='Spaceone' price={1.63} bid={0.33} />
+                    <div className=' mt-4 w-10/12'>
+                        <RankingsTable artistData={artistData} />
                     </div>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={1}>
-                    <div className=' grid grid-cols-3 mt-14 gap-10 w-10/12'>
-                        <NFTComponent bgColor='#2B2B2B' image={image1} title='Distant Galaxy' creatorPic={fox} creator='MoonDancer' price={1.63} bid={0.33} />
-                        <NFTComponent bgColor='#2B2B2B' image={image6} title='AstroFiction' creatorPic={fox} creator='Spaceone' price={1.63} bid={0.33} />
+                    <div className=' mt-4 w-10/12'>
+                        <RankingsTable artistData={artistData2} />
                     </div>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={2}>
-                    <div className=' grid grid-cols-3 mt-14 gap-10 w-10/12'>
-                        <NFTComponent bgColor='#2B2B2B' image={image1} title='Distant Galaxy' creatorPic={fox} creator='MoonDancer' price={1.63} bid={0.33} />
-                        <NFTComponent bgColor='#2B2B2B' image={image6} title='AstroFiction' creatorPic={fox} creator='Spaceone' price={1.63} bid={0.33} />
+                    <div className=' mt-4 w-10/12'>
+                        <RankingsTable artistData={artistData2} />
                     </div>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={3}>
-                    <div className=' grid grid-cols-3 mt-14 gap-10 w-10/12'>
-                        <NFTComponent bgColor='#2B2B2B' image={image1} title='Distant Galaxy' creatorPic={fox} creator='MoonDancer' price={1.63} bid={0.33} />
-                        <NFTComponent bgColor='#2B2B2B' image={image6} title='AstroFiction' creatorPic={fox} creator='Spaceone' price={1.63} bid={0.33} />
+                    <div className=' mt-4 w-10/12'>
+                        <RankingsTable artistData={artistData} />
                     </div>
                 </CustomTabPanel>
             </Box>
@@ -133,6 +176,10 @@ const CreatorsRankings = () => {
                     padding: 0px 176px;
                     
                     }
+
+                    .css-19kzrtu {
+                        background: #2B2B2B !important;
+                      }
                     `
                 }
             </style>
