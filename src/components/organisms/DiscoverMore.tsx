@@ -16,7 +16,7 @@ const DiscoverMore = () => {
         <div className='DiscoverMore w-full text-white mt-36'>
             <div className='DiscoverMore__header flex flex-row items-end justify-between'>
                 <div className='DiscoverMore__header__titleDescription flex flex-col gap-3'>
-                    <h3 className={`${WorkSans.className} text-4xl`}>
+                    <h3 className={`${WorkSans.className} xl:text-4xl text-3xl`}>
                         Discover More NFTs
                     </h3>
                     <p className={`${WorkSansRegular.className} text-xl`}>

@@ -5,7 +5,7 @@ const WorkSansRegular = localFont({ src: '../../assets/fonts/WorkSans-Regular.tt
 
 const Statistics = ({ statsNum, title }: { statsNum: number, title: string }) => {
     return (
-        <div className='Statistics flex flex-col text-3xl'>
+        <div className='Statistics flex flex-col xl:text-3xl text-xl'>
             <p className={`${spaceMono.className}`}> {statsNum}k+ </p>
             <p className={`${WorkSansRegular.className}`}> {title} </p>
         </div>

@@ -13,7 +13,7 @@ import WeeklyWidget from "@/components/organisms/WeeklyWidget";
 const HomepageTemplate = () => {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between pt-8  bg-[#2B2B2B]">
-            <div className="px-28 w-full">
+            <div className="xl:px-28 px-20 w-full 3xl:w-4/5">
                 <Header />
                 <HeroSection />
                 <TrendingSection />
@@ -22,7 +22,7 @@ const HomepageTemplate = () => {
                 <DiscoverMore />
             </div>
             <NFTHighlight />
-            <div className="px-28 w-full">
+            <div className="xl:px-28 px-20 w-full 3xl:w-4/5">
                 <HowItWorks />
                 <WeeklyWidget />
             </div>

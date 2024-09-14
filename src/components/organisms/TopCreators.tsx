@@ -18,7 +18,7 @@ const TopCreators = () => {
         <div className='TopCreators text-white w-full mt-36'>
             <div className='TopCreators__header flex flex-row items-end justify-between'>
                 <div className='TopCreators__header__titleDescription flex flex-col gap-3'>
-                    <h3 className={`${WorkSans.className} text-4xl`}>
+                    <h3 className={`${WorkSans.className} xl:text-4xl text-3xl`}>
                         Top creators
                     </h3>
                     <p className={`${WorkSansRegular.className} text-xl`}>

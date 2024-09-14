@@ -16,7 +16,7 @@ const NFTHighlight = () => {
 
             <div className=' absolute left-[10%] top-[55%]'>
                 <ProfileBadge name='Shroomie' imageSrc={avatar} />
-                <h1 className={`${WorkSans.className} self-stretch mt-8 text-5xl font-semibold leading-none text-white capitalize`}>
+                <h1 className={`${WorkSans.className} self-stretch mt-8 xl:text-5xl text-4xl font-semibold leading-none text-white capitalize`}>
                     Magic Mashrooms
                 </h1>
                 <button className="flex gap-3 justify-center items-center px-11 py-5 mt-8 text-base font-semibold leading-snug text-center bg-white rounded-2xl text-zinc-800">

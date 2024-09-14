@@ -11,7 +11,7 @@ const HowItWorksCard = ({ image, title, description }: { image: StaticImageData,
             <h2 className={`${WorkSans.className} text-xl`}>
                 {title}
             </h2>
-            <p className={`${WorkSansRegular.className}`}>
+            <p className={`${WorkSansRegular.className} text-base`}>
                 {description}
             </p>
         </div>

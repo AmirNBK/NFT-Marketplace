@@ -13,10 +13,10 @@ const HeroSection = () => {
     return (
         <div className={`${WorkSans.className} HeroSection flex flex-row items-center justify-center mt-16`}>
             <div className='HeroSection__leftSide text-white flex flex-col gap-7 justify-between flex-1'>
-                <h1 className='text-6xl leading-tight'>
+                <h1 className='xl:text-6xl text-4xl leading-tight'>
                     Discover digital art & Collect NFTs
                 </h1>
-                <p className={`${WorkSansRegular.className} text-xl`}>
+                <p className={`${WorkSansRegular.className} xl:text-xl text-base`}>
                     NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.
                 </p>
                 <PrimaryButton text='Get Started' icon={RocketLaunch} hasIcon />
@@ -27,7 +27,7 @@ const HeroSection = () => {
                 </div>
             </div>
             <div className='HeroSection__rightSide flex-[1.3]'>
-                <Image src={heroAnimation} alt='animation' className='size-[580px] ml-auto' />
+                <Image src={heroAnimation} alt='animation' className='xl:size-[580px] size-[450px] ml-auto' />
             </div>
         </div>
     );

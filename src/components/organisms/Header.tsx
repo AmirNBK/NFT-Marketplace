@@ -23,7 +23,7 @@ const Header = () => {
                 ApeNFT
                 </p>
             </Link>
-            <div className='flex flex-row gap-14 items-center'>
+            <div className='flex flex-row xl:gap-14 gap-10 items-center'>
                 {headerItems.map((item, index) => (
                     <Link key={index} href={item.link} className='cursor-pointer'>
                         {item.label}
