@@ -1,10 +1,10 @@
 import React from 'react';
-import storeFront from '@/assets/icons/Storefront.svg'
-import NFT from '@/assets/images/NFT Marketplace.png'
+import ape from '@/assets/icons/ape.png'
 import Image from 'next/image';
 import localFont from 'next/font/local'
 import PrimaryButton from '../atoms/PrimaryButton';
 const WorkSans = localFont({ src: '../../assets/fonts/WorkSans-SemiBold.ttf' })
+const Bungee  = localFont({ src: '../../assets/fonts/ProtestGuerrilla-Regular.ttf' })
 import user from '@/assets/icons/User.svg'
 import Link from 'next/link';
 
@@ -18,8 +18,10 @@ const Header = () => {
     return (
         <div className={`${WorkSans.className} Header text-white flex flex-row justify-between w-full items-center`}>
             <Link href={'/'} className='Header__leftSide flex flex-row items-center gap-3'>
-                <Image src={storeFront} alt='storeFront' className='cursor-pointer' />
-                <Image src={NFT} alt='NFT Marketplace' className='translate-y-0.5 cursor-pointer' unoptimized />
+                <Image src={ape} alt='ApeIcon' className='cursor-pointer size-12' />
+                <p className={`text-2xl text-[#A259FF] ${Bungee.className}`}>
+                ApeNFT
+                </p>
             </Link>
             <div className='flex flex-row gap-14 items-center'>
                 {headerItems.map((item, index) => (

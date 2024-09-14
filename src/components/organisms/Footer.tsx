@@ -1,6 +1,6 @@
 import React from 'react';
-import storeFront from '@/assets/icons/Storefront.svg'
-import NFT from '@/assets/images/NFT Marketplace.png'
+const Bungee  = localFont({ src: '../../assets/fonts/ProtestGuerrilla-Regular.ttf' })
+import ape from '@/assets/icons/ape.png'
 import Image from 'next/image';
 import localFont from 'next/font/local'
 const WorkSansRegular = localFont({ src: '../../assets/fonts/WorkSans-Regular.ttf' })
@@ -20,8 +20,10 @@ const Footer = () => {
             <div className='Footer__content flex flex-row w-full justify-between gap-24'>
                 <div className='Footer__leftSide flex flex-col gap-3'>
                     <div className=' flex flex-row items-center gap-3 mb-5'>
-                        <Image src={storeFront} alt='storeFront' className='cursor-pointer' />
-                        <Image src={NFT} alt='NFT Marketplace' className='translate-y-0.5 cursor-pointer' unoptimized />
+                        <Image src={ape} alt='ApeIcon' className='cursor-pointer size-12' />
+                        <p className={`text-2xl text-[#A259FF] ${Bungee.className}`}>
+                            ApeNFT
+                        </p>
                     </div>
                     <div className='flex flex-col gap-4'>
                         <p className=' text-[#CCCCCC] text-lg'>
