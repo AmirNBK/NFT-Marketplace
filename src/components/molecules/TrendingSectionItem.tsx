@@ -19,7 +19,7 @@ const TrendingSectionItem = ({ images, title, creator, creatorPic, morePicsAmoun
                         alt='image'
                     />
                 </div>
-                <div className="flex xl:gap-4 gap-7 mt-4 font-bold text-center capitalize whitespace-nowrap leading-[160%] w-full justify-between">
+                <div className="flex xl:gap-4 lg:gap-7 gap-3 mt-4 font-bold text-center capitalize whitespace-nowrap leading-[160%] w-full justify-between">
                     <Image
                         unoptimized
                         loading="lazy"
@@ -31,7 +31,7 @@ const TrendingSectionItem = ({ images, title, creator, creatorPic, morePicsAmoun
                         unoptimized
                         loading="lazy"
                         src={images[2]}
-                        className="rounded-3xl w-1/3 h-[100px] object-cover xl:block hidden"
+                        className="rounded-3xl w-1/3 h-[100px] object-cover xl:block block"
                         alt='image'
                     />
                     <div className={`${spaceMono.className} px-4 py-8 bg-purple-500 xl:w-1/3 w-1/2 rounded-3xl h-[100px]`}>

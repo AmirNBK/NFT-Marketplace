@@ -35,7 +35,7 @@ const SingleNFTContainer = () => {
                 </div>
 
                 <div className='flex-[1.3] w-full mx-auto flex justify-end mr-12'>
-                    <AuctionTimer bgColor='[#3B3B3B]' button={
+                    <AuctionTimer bgColor='#3B3B3B' button={
                         <div className='mt-5'>
                             <PrimaryButton hasIcon={false} text='Place Bid' width='full' />
                         </div>

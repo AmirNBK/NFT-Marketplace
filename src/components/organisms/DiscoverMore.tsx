@@ -13,7 +13,7 @@ import fox from '@/assets/images/foxMini.png'
 
 const DiscoverMore = () => {
     return (
-        <div className='DiscoverMore w-full text-white mt-36'>
+        <div className='DiscoverMore w-full text-white lg:mt-36 mt-20'>
             <div className='DiscoverMore__header flex flex-row items-end justify-between'>
                 <div className='DiscoverMore__header__titleDescription flex flex-col gap-3'>
                     <h3 className={`${WorkSans.className} xl:text-4xl text-3xl`}>
@@ -34,11 +34,17 @@ const DiscoverMore = () => {
                 </div>
             </div>
 
-            <div className=' grid grid-cols-3 mt-14 gap-10'>
+            {/* Desktop size */}
+            <div className='lg:grid hidden grid-cols-3 mt-14 gap-10'>
                 <NFTComponent image={image1} title='Distant Galaxy' creatorPic={fox} creator='MoonDancer' price={1.63} bid={0.33} />
                 <NFTComponent image={image2} title='Life On Edena' creatorPic={fox} creator='NebulaKid' price={1.63} bid={0.33} />
                 <NFTComponent image={image3} title='AstroFiction' creatorPic={fox} creator='Spaceone' price={1.63} bid={0.33} />
+            </div>
 
+            {/* Tablet size */}
+            <div className='lg:hidden grid grid-cols-2 mt-14 gap-10'>
+                <NFTComponent image={image1} title='Distant Galaxy' creatorPic={fox} creator='MoonDancer' price={1.63} bid={0.33} />
+                <NFTComponent image={image2} title='Life On Edena' creatorPic={fox} creator='NebulaKid' price={1.63} bid={0.33} />
             </div>
 
         </div>

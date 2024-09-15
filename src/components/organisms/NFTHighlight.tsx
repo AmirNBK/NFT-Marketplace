@@ -14,7 +14,7 @@ const NFTHighlight = () => {
         >
             <Image src={image} className="object-cover absolute inset-0 size-full" unoptimized alt="" />
 
-            <div className=' absolute left-[10%] top-[55%]'>
+            <div className=' absolute lg:right-[10%]  left-[5%] top-[55%]'>
                 <ProfileBadge name='Shroomie' imageSrc={avatar} />
                 <h1 className={`${WorkSans.className} self-stretch mt-8 xl:text-5xl text-4xl font-semibold leading-none text-white capitalize`}>
                     Magic Mashrooms
@@ -27,8 +27,8 @@ const NFTHighlight = () => {
                 </button>
             </div>
 
-            <div className='absolute right-[10%] top-[65%]'>
-                <AuctionTimer bgColor='neutral-700' />
+            <div className='absolute lg:right-[10%]  right-[5%] top-[65%]'>
+                <AuctionTimer bgColor='rgb(64 64 64 / var(--tw-bg-opacity)) ' />
             </div>
 
         </div>

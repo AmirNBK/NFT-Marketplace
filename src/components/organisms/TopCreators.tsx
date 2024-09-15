@@ -15,9 +15,9 @@ import avatar6 from '@/assets/images/Avatar6.png'
 
 const TopCreators = () => {
     return (
-        <div className='TopCreators text-white w-full mt-36'>
+        <div className='TopCreators text-white w-full lg:mt-36 mt-24'>
             <div className='TopCreators__header flex flex-row items-end justify-between'>
-                <div className='TopCreators__header__titleDescription flex flex-col gap-3'>
+                <div className='TopCreators__header__titleDescription flex flex-col gap-3 lg:w-fit w-1/2'>
                     <h3 className={`${WorkSans.className} xl:text-4xl text-3xl`}>
                         Top creators
                     </h3>
@@ -36,7 +36,7 @@ const TopCreators = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-4 gap-10 mt-14'>
+            <div className='grid lg:grid-cols-4 grid-cols-2 gap-10 mt-14'>
                 <CreatorsComponent index={1} avatar={avatar1} name='Keepitreal' sales={34.53} />
                 <CreatorsComponent index={2} avatar={avatar2} name='Keepitreal' sales={34.53} />
                 <CreatorsComponent index={3} avatar={avatar3} name='Keepitreal' sales={34.53} />

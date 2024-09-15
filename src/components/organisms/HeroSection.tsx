@@ -26,7 +26,7 @@ const HeroSection = () => {
                     <Statistics statsNum={240} title='Artist' />
                 </div>
             </div>
-            <div className='HeroSection__rightSide flex-[1.3]'>
+            <div className='HeroSection__rightSide lg:flex-[1.3] flex-[1.1] lg:translate-x-0 translate-x-12'>
                 <Image src={heroAnimation} alt='animation' className='xl:size-[580px] size-[450px] ml-auto' />
             </div>
         </div>

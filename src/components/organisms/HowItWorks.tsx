@@ -21,7 +21,7 @@ const HowItWorks = () => {
                 </p>
             </div>
 
-            <div className='grid grid-cols-3 gap-6 mt-8'>
+            <div className='grid grid-cols-3 lg:gap-6 gap-3 mt-8'>
                 <HowItWorksCard title='Setup Your wallet' description='Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.'
                     image={image1}
                 />

@@ -7,6 +7,7 @@ const WorkSans = localFont({ src: '../../assets/fonts/WorkSans-SemiBold.ttf' })
 const Bungee  = localFont({ src: '../../assets/fonts/ProtestGuerrilla-Regular.ttf' })
 import user from '@/assets/icons/User.svg'
 import Link from 'next/link';
+import burgerMenu from '@/assets/icons/Burger Menu.svg'
 
 const Header = () => {
     const headerItems = [
@@ -23,7 +24,7 @@ const Header = () => {
                 ApeNFT
                 </p>
             </Link>
-            <div className='flex flex-row xl:gap-14 gap-10 items-center'>
+            <div className='lg:flex hidden flex-row xl:gap-14 gap-10 items-center'>
                 {headerItems.map((item, index) => (
                     <Link key={index} href={item.link} className='cursor-pointer'>
                         {item.label}
@@ -31,6 +32,8 @@ const Header = () => {
                 ))}
                 <PrimaryButton text='Sign Up' icon={user} hasIcon href={'/signup'} />
             </div>
+
+            <Image src={burgerMenu} alt='burgerMenu' className='lg:hidden block'/>
         </div>
     );
 };

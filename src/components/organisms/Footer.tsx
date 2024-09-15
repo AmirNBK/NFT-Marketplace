@@ -17,9 +17,9 @@ const Footer = () => {
     const socialMediaIcons = [discord, youtube, twitter, instagram]
     return (
         <div className={` ${WorkSansRegular.className} Footer bg-[#3B3B3B] w-full pt-12 flex flex-col xl:px-32 px-20 text-white`}>
-            <div className='Footer__content flex flex-row w-full justify-between gap-24'>
+            <div className='Footer__content flex lg:flex-row flex-col w-full justify-between lg:gap-24 gap-8'>
                 <div className='Footer__leftSide flex flex-col gap-3'>
-                    <div className=' flex flex-row items-center gap-3 mb-5'>
+                    <div className=' flex flex-row items-center gap-3 lg:mb-5 mb-2'>
                         <Image src={ape} alt='ApeIcon' className='cursor-pointer size-12' />
                         <p className={`text-2xl text-[#A259FF] ${Bungee.className}`}>
                             ApeNFT
@@ -42,7 +42,7 @@ const Footer = () => {
 
                 <div className='Footer__center flex flex-col gap-3'>
                     <div className=' flex flex-row items-center gap-3'>
-                        <p className={`${spaceMono.className} text-2xl mb-5`}>
+                        <p className={`${spaceMono.className} text-2xl lg:mb-5 mb-2`}>
                             Explore
                         </p>
                     </div>
@@ -62,7 +62,7 @@ const Footer = () => {
 
                 <div className='Footer__rightSide flex flex-col gap-3'>
                     <div className=' flex flex-row items-center gap-3'>
-                        <p className={`${spaceMono.className} text-2xl mb-5`}>
+                        <p className={`${spaceMono.className} text-2xl g:mb-5 mb-2`}>
                             Join our weekly digest
                         </p>
                     </div>
@@ -70,7 +70,10 @@ const Footer = () => {
                         <p className=' text-[#CCCCCC] text-lg'>
                             Get exclusive promotions & updates straight to your inbox.
                         </p>
+                        <div className='w-1/2 lg:w-full lg:mt-0 mt-3'>
                         <SubscribeForm placeholder='Enter your email here' bgColor='#A259FF' hasIcon={false} />
+
+                        </div>
                     </div>
 
                 </div>
