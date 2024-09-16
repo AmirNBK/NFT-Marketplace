@@ -20,13 +20,11 @@ const CategoriesSection = () => {
                 Browse Categories
             </h3>
 
-            <div className=' mt-12 grid grid-cols-4 gap-8'>
+            <div className=' mt-12 grid sm:grid-cols-4 grid-cols-2 gap-8'>
                 <CategoriesComponent category='Art' image={categoryPic4} icon={brush} />
                 <CategoriesComponent category='Collectibles' image={categoryPic1} icon={swatches} />
                 <CategoriesComponent category='Music' image={categoryPic2} icon={music} />
                 <CategoriesComponent category='Photography' image={categoryPic3} icon={camera} />
-
-
             </div>
         </div>
     );

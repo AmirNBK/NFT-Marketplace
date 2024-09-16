@@ -29,9 +29,14 @@ const TrendingSection = () => {
             </div>
 
             {/* Tablet size */}
-            <div className='lg:hidden grid grid-cols-2 mt-10 gap-12'>
+            <div className='sm:grid lg:hidden hidden grid-cols-2 mt-10 gap-12'>
                 <TrendingSectionItem images={[animalImage1, animalImage2, animalImage3]} title='DSGN Animals' creator='MrFox' creatorPic={foxProfile} morePicsAmount={1025} />
                 <TrendingSectionItem images={[animalImage1, animalImage2, animalImage3]} title='Magic Mushrooms' creator='Shroomie' creatorPic={foxProfile} morePicsAmount={1025} />
+            </div>
+
+            {/* Mobile size */}
+            <div className='sm:hidden grid grid-cols-1 mt-10 gap-12'>
+                <TrendingSectionItem images={[animalImage1, animalImage2, animalImage3]} title='DSGN Animals' creator='MrFox' creatorPic={foxProfile} morePicsAmount={1025} />
             </div>
         </div>
     );

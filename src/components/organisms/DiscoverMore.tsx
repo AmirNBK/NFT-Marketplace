@@ -24,7 +24,7 @@ const DiscoverMore = () => {
                     </p>
                 </div>
 
-                <div className='DiscoverMore__header__button'>
+                <div className='DiscoverMore__header__button sm:block hidden'>
                     <button className='flex flex-row-reverse gap-3 border-2 border-purple-500 py-4 px-12 rounded-2xl items-center'>
                         <p>
                             See All
@@ -42,10 +42,26 @@ const DiscoverMore = () => {
             </div>
 
             {/* Tablet size */}
-            <div className='lg:hidden grid grid-cols-2 mt-14 gap-10'>
+            <div className='sm:grid lg:hidden hidden grid-cols-2 mt-14 gap-10'>
                 <NFTComponent image={image1} title='Distant Galaxy' creatorPic={fox} creator='MoonDancer' price={1.63} bid={0.33} />
                 <NFTComponent image={image2} title='Life On Edena' creatorPic={fox} creator='NebulaKid' price={1.63} bid={0.33} />
             </div>
+
+            {/* Mobile size */}
+            <div className='sm:hidden grid grid-cols-1 mt-14 gap-10'>
+                <NFTComponent image={image1} title='Distant Galaxy' creatorPic={fox} creator='MoonDancer' price={1.63} bid={0.33} />
+                <NFTComponent image={image2} title='Life On Edena' creatorPic={fox} creator='NebulaKid' price={1.63} bid={0.33} />
+                <NFTComponent image={image3} title='AstroFiction' creatorPic={fox} creator='Spaceone' price={1.63} bid={0.33} />
+            </div>
+
+            <div className='DiscoverMore__header__button sm:hidden block w-full'>
+                    <button className='flex flex-row-reverse gap-3 border-2 border-purple-500 py-4 px-12 rounded-2xl items-center w-full justify-center mt-10'>
+                        <p>
+                            See All
+                        </p>
+                        <Image src={eye} alt='rocket' />
+                    </button>
+                </div>
 
         </div>
     );

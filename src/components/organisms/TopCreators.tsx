@@ -17,7 +17,7 @@ const TopCreators = () => {
     return (
         <div className='TopCreators text-white w-full lg:mt-36 mt-24'>
             <div className='TopCreators__header flex flex-row items-end justify-between'>
-                <div className='TopCreators__header__titleDescription flex flex-col gap-3 lg:w-fit w-1/2'>
+                <div className='TopCreators__header__titleDescription flex flex-col gap-3 lg:w-fit sm:w-1/2 w-full'>
                     <h3 className={`${WorkSans.className} xl:text-4xl text-3xl`}>
                         Top creators
                     </h3>
@@ -26,7 +26,7 @@ const TopCreators = () => {
                     </p>
                 </div>
 
-                <div className='TopCreators__header__button'>
+                <div className='TopCreators__header__button sm:block hidden'>
                     <button className='flex flex-row-reverse gap-3 border-2 border-purple-500 py-4 px-12 rounded-2xl items-center'>
                         <p>
                             View Rankings
@@ -36,7 +36,7 @@ const TopCreators = () => {
                 </div>
             </div>
 
-            <div className='grid lg:grid-cols-4 grid-cols-2 gap-10 mt-14'>
+            <div className='grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 mt-14'>
                 <CreatorsComponent index={1} avatar={avatar1} name='Keepitreal' sales={34.53} />
                 <CreatorsComponent index={2} avatar={avatar2} name='Keepitreal' sales={34.53} />
                 <CreatorsComponent index={3} avatar={avatar3} name='Keepitreal' sales={34.53} />
@@ -47,6 +47,15 @@ const TopCreators = () => {
                 <CreatorsComponent index={8} avatar={avatar2} name='Keepitreal' sales={34.53} />
 
             </div>
+
+            <div className='TopCreators__header__button sm:hidden block w-full'>
+                    <button className='flex flex-row-reverse gap-3 border-2 border-purple-500 py-4 px-12 rounded-2xl items-center w-full justify-center mt-10'>
+                        <p>
+                            View Rankings
+                        </p>
+                        <Image src={rocket} alt='rocket' />
+                    </button>
+                </div>
         </div>
     );
 };
