@@ -28,14 +28,14 @@ const CreateAccountForms = () => {
             alert(JSON.stringify(values, null, 2));
         },
     });
-    
+
     return (
-        <div className={`text-white CreateAccountForms flex flex-col gap-5 w-9/12`}>
-            <h2 className={`text-5xl ${WorkSans.className}`}>
+        <div className={`text-white CreateAccountForms flex flex-col gap-5 lg:w-9/12 w-full 3xl:w-11/12`}>
+            <h2 className={`xl:text-5xl text-3xl ${WorkSans.className}`}>
                 Create account
             </h2>
 
-            <p className={`${WorkSansRegular.className} text-xl`}>
+            <p className={`${WorkSansRegular.className} lg:text-xl text-base`}>
                 Welcome! enter your details and start creating, collecting and selling NFTs.
             </p>
 
@@ -75,8 +75,16 @@ const CreateAccountForms = () => {
 
                 </div>
 
-                <div className='mt-3'>
+                <div className='lg:block hidden mt-3'>
                     <PrimaryButton text='Create account' hasIcon={false} width='8/12'
+                        onClick={() => {
+                            setInitialSubmit(true)
+                        }}
+                    />
+                </div>
+
+                <div className='lg:hidden block mt-8'>
+                    <PrimaryButton text='Create account' hasIcon={false} width='full'
                         onClick={() => {
                             setInitialSubmit(true)
                         }}

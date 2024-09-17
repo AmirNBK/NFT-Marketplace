@@ -19,7 +19,7 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({ text, icon, hasIcon, widt
     const buttonContent = (
         <button
             onClick={onClick}
-            className={`bg-[#A259FF] flex flex-row-reverse gap-3 px-8 py-4 rounded-3xl justify-center items-center ${WorkSans.className} w-${width}`}>
+            className={`bg-[#A259FF] flex flex-row-reverse gap-3 px-8 py-4 rounded-3xl justify-center 3xl:text-xl items-center ${WorkSans.className} w-${width}`}>
             <p>{text}</p>
             {(hasIcon && icon) && <Image src={icon} alt='icon' />}
         </button>
