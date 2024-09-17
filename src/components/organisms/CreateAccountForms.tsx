@@ -83,7 +83,7 @@ const CreateAccountForms = () => {
                     />
                 </div>
 
-                <div className='lg:hidden block mt-8'>
+                <div className='lg:hidden block mt-8 sm:mb-16 mb-5'>
                     <PrimaryButton text='Create account' hasIcon={false} width='full'
                         onClick={() => {
                             setInitialSubmit(true)

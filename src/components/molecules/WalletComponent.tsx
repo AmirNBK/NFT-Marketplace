@@ -6,8 +6,8 @@ const WorkSans = localFont({ src: '../../assets/fonts/WorkSans-SemiBold.ttf' })
 
 const WalletComponent = ({ walletName, icon }: { walletName: string, icon: StaticImageData }) => {
     return (
-        <button className='WalletComponent border flex flex-row
-         items-center gap-4 py-4 pl-10 w-9/12
+        <button className='WalletComponent border flex flex-row 
+         items-center gap-4 py-4 pl-10 3xl:w-full xl:w-9/12 w-full
         border-[#A259FF] rounded-[20px] bg-[#3B3B3B]'>
 
             <Image src={icon} alt='wallet icon' />
