@@ -31,7 +31,7 @@ const CreateAccountForms = () => {
 
     return (
         <div className={`text-white CreateAccountForms flex flex-col gap-5 lg:w-9/12 w-full 3xl:w-11/12`}>
-            <h2 className={`xl:text-5xl text-3xl ${WorkSans.className}`}>
+            <h2 className={`xl:text-5xl sm:text-3xl text-4xl ${WorkSans.className}`}>
                 Create account
             </h2>
 
@@ -40,7 +40,7 @@ const CreateAccountForms = () => {
             </p>
 
             <form onSubmit={formik.handleSubmit}>
-                <div className='flex flex-col gap-5 mt-5'>
+                <div className='flex flex-col gap-5 sm:mt-5 mt-3'>
                     <AuthInput placeholder='Username' icon={user} type='text'
                         name='username'
                         onChange={formik.handleChange}
