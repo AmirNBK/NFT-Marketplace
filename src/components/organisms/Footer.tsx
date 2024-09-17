@@ -16,7 +16,7 @@ import SubscribeForm from '../molecules/SubscribeForm';
 const Footer = () => {
     const socialMediaIcons = [discord, youtube, twitter, instagram]
     return (
-        <div className={` ${WorkSansRegular.className} Footer bg-[#3B3B3B] w-full pt-12 flex flex-col xl:px-32 px-20 text-white`}>
+        <div className={` ${WorkSansRegular.className} Footer bg-[#3B3B3B] w-full pt-12 flex flex-col xl:px-32 sm:px-20 px-8 text-white`}>
             <div className='Footer__content flex lg:flex-row flex-col w-full justify-between lg:gap-24 gap-8'>
                 <div className='Footer__leftSide flex flex-col gap-3'>
                     <div className=' flex flex-row items-center gap-3 lg:mb-5 mb-2'>
@@ -70,7 +70,7 @@ const Footer = () => {
                         <p className=' text-[#CCCCCC] text-lg'>
                             Get exclusive promotions & updates straight to your inbox.
                         </p>
-                        <div className='w-1/2 lg:w-full lg:mt-0 mt-3'>
+                        <div className='sm:w-1/2 lg:w-full w-full lg:mt-0 mt-3'>
                         <SubscribeForm placeholder='Enter your email here' bgColor='#A259FF' hasIcon={false} />
 
                         </div>

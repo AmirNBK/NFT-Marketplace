@@ -11,7 +11,7 @@ import image3 from '@/assets/images/Icon(2).png'
 
 const HowItWorks = () => {
     return (
-        <div className='HowItWorks text-white w-full mt-28'>
+        <div className='HowItWorks text-white w-full sm:mt-28 mt-20'>
             <div className='HowItWorks__header flex flex-col gap-3'>
                 <h3 className={`${WorkSans.className} text-4xl`}>
                     How it works
@@ -21,7 +21,7 @@ const HowItWorks = () => {
                 </p>
             </div>
 
-            <div className='grid grid-cols-3 lg:gap-6 gap-3 mt-8'>
+            <div className='grid sm:grid-cols-3 grid-cols-1 lg:gap-6 sm:gap-3 gap-5 mt-8'>
                 <HowItWorksCard title='Setup Your wallet' description='Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.'
                     image={image1}
                 />

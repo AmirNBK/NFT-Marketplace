@@ -8,8 +8,8 @@ const WorkSans = localFont({ src: '../../assets/fonts/WorkSans-SemiBold.ttf' })
 
 const WeeklyWidget = () => {
     return (
-        <div className='WeeklyWidget rounded-2xl w-full h-fit bg-[#3B3B3B] flex flex-row items-center xl:gap-16 gap-10  xl:p-16 p-10 text-white lg:mt-36 mt-20'>
-            <div className=' w-[425px] h-[350px] flex-1 '>
+        <div className='WeeklyWidget rounded-2xl w-full h-fit sm:bg-[#3B3B3B] flex sm:flex-row flex-col items-center xl:gap-16 gap-10  xl:p-16 sm:p-10 text-white lg:mt-36 mt-20'>
+            <div className=' sm:w-[425px] w-full h-[350px] flex-1 '>
                 <Image src={astronut} alt='image' className=' w-full h-full rounded-2xl object-cover' />
             </div>
 

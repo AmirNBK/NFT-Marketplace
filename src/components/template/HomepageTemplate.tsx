@@ -26,7 +26,7 @@ const HomepageTemplate = () => {
                 <HowItWorks />
                 <WeeklyWidget />
             </div>
-            <div className="mt-28 w-full">
+            <div className="mt-28 w-full ">
                 <Footer />
             </div>
 

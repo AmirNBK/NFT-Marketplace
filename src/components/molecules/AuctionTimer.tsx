@@ -57,7 +57,7 @@ const AuctionTimer: React.FC<TimerProps> = ({ bgColor, button }) => {
     return (
         <div 
         style={{backgroundColor : `${bgColor}`}}
-        className={`${spaceMono.className} flex flex-col p-8 text-white rounded-3xl bg-opacity-50 min-w-[240px] w-[295px] max-md:px-5`}>
+        className={`${spaceMono.className} flex flex-col p-8 text-white rounded-3xl bg-opacity-50 min-w-[240px] sm:w-[295px] w-full max-md:px-5`}>
             <div className={`${spaceMonoRegular.className} text-xs leading-none`}>Auction ends in:</div>
             <div className="flex gap-2.5 items-start mt-2.5 w-full whitespace-nowrap">
                 {timeUnits.map((unit, index) => (
