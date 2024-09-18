@@ -1,6 +1,6 @@
 import React from 'react';
 import SingleNFTInfo from './SingleNFTInfo';
-import fox from '@/assets/images/foxMini.png'
+import fox from '@/assets/images/foxMini.png';
 import AuctionTimer from '../molecules/AuctionTimer';
 import PrimaryButton from '../atoms/PrimaryButton';
 
@@ -8,7 +8,7 @@ const SingleNFTContainer = () => {
     return (
         <div className='SingleNFTContainer'>
             <div className='px-24 flex flex-row items-start'>
-                <div className=' w-full flex-1'>
+                <div className='w-full flex-1'>
                     <SingleNFTInfo name='The Orbitians' date={'Sep 30, 2022'} artist='Orbitian' artistIcon={fox}
                         description={
                             <div className='leading-relaxed'>
@@ -23,9 +23,9 @@ const SingleNFTContainer = () => {
                                 </p>
                                 <br />
                                 <p>
-                                    They live in a metal space machines, high up in the sky and only have one foot on Earth.
+                                    They live in metal space machines, high up in the sky and only have one foot on Earth.
                                     <br />
-                                    These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.
+                                    These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations. The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they&apos;ve taken to make human beings their target.
                                 </p>
                             </div>
                         }
@@ -42,7 +42,6 @@ const SingleNFTContainer = () => {
                     } />
                 </div>
             </div>
-
         </div>
     );
 };
