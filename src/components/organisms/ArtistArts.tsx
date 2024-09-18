@@ -90,7 +90,7 @@ const ArtistArts = () => {
                 </Box>
                 <CustomTabPanel value={value} index={0}>
 
-                    <div className=' grid grid-cols-3 mt-14 gap-10 w-10/12'>
+                    <div className=' grid lg:grid-cols-3 grid-cols-2 mt-14 gap-10 w-10/12'>
                         <NFTComponent bgColor='#2B2B2B' image={image1} title='Distant Galaxy' creatorPic={fox} creator='MoonDancer' price={1.63} bid={0.33} />
                         <NFTComponent bgColor='#2B2B2B' image={image2} title='Life On Edena' creatorPic={fox} creator='NebulaKid' price={1.63} bid={0.33} />
                         <NFTComponent bgColor='#2B2B2B' image={image3} title='AstroFiction' creatorPic={fox} creator='Spaceone' price={1.63} bid={0.33} />
@@ -100,13 +100,13 @@ const ArtistArts = () => {
                     </div>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={1}>
-                    <div className=' grid grid-cols-3 mt-14 gap-10 w-10/12'>
+                    <div className=' grid lg:grid-cols-3 grid-cols-2 mt-14 gap-10 w-10/12'>
                         <NFTComponent bgColor='#2B2B2B' image={image1} title='Distant Galaxy' creatorPic={fox} creator='MoonDancer' price={1.63} bid={0.33} />
                         <NFTComponent bgColor='#2B2B2B' image={image6} title='AstroFiction' creatorPic={fox} creator='Spaceone' price={1.63} bid={0.33} />
                     </div>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={2}>
-                    <div className=' grid grid-cols-3 mt-14 gap-10 w-10/12'>
+                    <div className=' grid lg:grid-cols-3 grid-cols-2 mt-14 gap-10 w-10/12'>
                         <NFTComponent bgColor='#2B2B2B' image={image1} title='Distant Galaxy' creatorPic={fox} creator='MoonDancer' price={1.63} bid={0.33} />
                         <NFTComponent bgColor='#2B2B2B' image={image6} title='AstroFiction' creatorPic={fox} creator='Spaceone' price={1.63} bid={0.33} />
                         <NFTComponent bgColor='#2B2B2B' image={image4} title='Distant Galaxy' creatorPic={fox} creator='MoonDancer' price={1.63} bid={0.33} />
