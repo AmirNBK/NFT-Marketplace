@@ -61,7 +61,7 @@ const ArtistArts = () => {
                                 <p className=' normal-case'>
                                     Created
                                 </p>
-                                <div className={`${spaceMono.className} amount rounded-2xl text-sm text-white px-2 py-1`}>
+                                <div className={`${spaceMono.className} amount rounded-2xl text-sm text-white px-2 py-1 sm:block hidden`}>
                                     302
                                 </div>
                             </div>
@@ -71,7 +71,7 @@ const ArtistArts = () => {
                                 <p className='normal-case'>
                                     Owned
                                 </p>
-                                <div className={`${spaceMono.className} amount rounded-2xl text-sm text-white px-2 py-1`}>
+                                <div className={`${spaceMono.className} amount rounded-2xl text-sm text-white px-2 py-1 sm:block hidden`}>
                                     67
                                 </div>
                             </div>
@@ -81,7 +81,7 @@ const ArtistArts = () => {
                                 <p className=' normal-case'>
                                     Collection
                                 </p>
-                                <div className={`${spaceMono.className} amount rounded-2xl text-sm text-white px-2 py-1`}>
+                                <div className={`${spaceMono.className} amount rounded-2xl text-sm text-white px-2 py-1 sm:block hidden`}>
                                     4
                                 </div>
                             </div>
@@ -90,7 +90,7 @@ const ArtistArts = () => {
                 </Box>
                 <CustomTabPanel value={value} index={0}>
 
-                    <div className=' grid lg:grid-cols-3 grid-cols-2 mt-14 gap-10 w-10/12'>
+                    <div className=' grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1  mt-14 gap-10 lg:w-10/12 w-11/12'>
                         <NFTComponent bgColor='#2B2B2B' image={image1} title='Distant Galaxy' creatorPic={fox} creator='MoonDancer' price={1.63} bid={0.33} />
                         <NFTComponent bgColor='#2B2B2B' image={image2} title='Life On Edena' creatorPic={fox} creator='NebulaKid' price={1.63} bid={0.33} />
                         <NFTComponent bgColor='#2B2B2B' image={image3} title='AstroFiction' creatorPic={fox} creator='Spaceone' price={1.63} bid={0.33} />
@@ -100,13 +100,13 @@ const ArtistArts = () => {
                     </div>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={1}>
-                    <div className=' grid lg:grid-cols-3 grid-cols-2 mt-14 gap-10 w-10/12'>
+                    <div className=' grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1  mt-14 gap-10 lg:w-10/12 w-11/12'>
                         <NFTComponent bgColor='#2B2B2B' image={image1} title='Distant Galaxy' creatorPic={fox} creator='MoonDancer' price={1.63} bid={0.33} />
                         <NFTComponent bgColor='#2B2B2B' image={image6} title='AstroFiction' creatorPic={fox} creator='Spaceone' price={1.63} bid={0.33} />
                     </div>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={2}>
-                    <div className=' grid lg:grid-cols-3 grid-cols-2 mt-14 gap-10 w-10/12'>
+                    <div className=' grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1  mt-14 gap-10 lg:w-10/12 w-11/12'>
                         <NFTComponent bgColor='#2B2B2B' image={image1} title='Distant Galaxy' creatorPic={fox} creator='MoonDancer' price={1.63} bid={0.33} />
                         <NFTComponent bgColor='#2B2B2B' image={image6} title='AstroFiction' creatorPic={fox} creator='Spaceone' price={1.63} bid={0.33} />
                         <NFTComponent bgColor='#2B2B2B' image={image4} title='Distant Galaxy' creatorPic={fox} creator='MoonDancer' price={1.63} bid={0.33} />

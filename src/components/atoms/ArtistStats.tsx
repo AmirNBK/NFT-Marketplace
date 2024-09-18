@@ -10,7 +10,7 @@ const ArtistStats = ({ title, stat }: { title: string, stat: string | number }) 
             <p className={`${spaceMono.className} 3xl:text-3xl text-2xl`}>
                 {stat}+
             </p>
-            <p className={`${WorkSansRegular.className} 3xl:text-xl text-lg`}>
+            <p className={`${WorkSansRegular.className} 3xl:text-xl sm:text-lg text-sm`}>
                 {title}
             </p>
         </div>

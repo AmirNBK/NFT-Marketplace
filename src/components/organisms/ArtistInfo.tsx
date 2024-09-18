@@ -21,13 +21,18 @@ const ArtistInfo = ({ profilePic, name, volume, soldNfts, followers, bio, links 
             <ArtistProfilePic picture={profilePic} />
 
             <div className='flex flex-col gap-8 text-white mt-20'>
-                <p className={`${WorkSans.className} 3xl:text-5xl text-4xl`}>
+                <p className={`${WorkSans.className} 3xl:text-5xl sm:text-4xl text-3xl`}>
                     {name}
                 </p>
 
-                <div className='SingleArtistInfoSection__infos__rightSide text-white flex lg:hidden flex-row gap-4'>
-                    <PrimaryButton text='0xc0E3...B79C' hasIcon icon={copy} />
-                    <button className='flex flex-row-reverse items-center px-8 py-4 gap-2 bg-transparent border-2 border-[#A259FF] rounded-3xl'>
+                <div className='SingleArtistInfoSection__infos__rightSide text-white flex lg:hidden sm:flex-row flex-col gap-4'>
+                    <div className='sm:hidden block'>
+                        <PrimaryButton text='0xc0E3...B79C' hasIcon icon={copy} width='full' />
+                    </div>
+                    <div className='sm:block hidden'>
+                        <PrimaryButton text='0xc0E3...B79C' hasIcon icon={copy} />
+                    </div>
+                    <button className='flex flex-row-reverse items-center px-8 py-4 gap-2 justify-center bg-transparent border-2 border-[#A259FF] rounded-3xl'>
                         <p className='3xl:text-xl'>
                             Follow
                         </p>

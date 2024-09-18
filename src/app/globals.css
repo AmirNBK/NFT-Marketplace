@@ -29,6 +29,10 @@ body {
 
   .css-heg063-MuiTabs-flexContainer {
     justify-content: center;
+
+    @media screen and (max-width: 640px) {
+      padding: 0px 20px;
+    }
   }
 
   .css-1aquho2-MuiTabs-indicator {
