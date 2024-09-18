@@ -1,4 +1,5 @@
-import Marketplace from "@/components/pages/MarketPlace";
+import Marketplace from "@/components/pages/Marketplace";
+
 
 
 export default function MarketplacePage() {
