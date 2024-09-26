@@ -71,7 +71,7 @@ const SingleNFTInfo = ({ name, date, artist, artistIcon, description, details, t
                     Tags
                 </p>
 
-                <div className='flex flex-row gap-4 mt-3'>
+                <div className='flex lg:flex-row flex-col gap-4 mt-3'>
                     {tags.map((item, index) => {
                         return (
                             <TagComponent tag={item} key={index} />

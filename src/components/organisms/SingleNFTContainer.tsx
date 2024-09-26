@@ -7,8 +7,8 @@ import PrimaryButton from '../atoms/PrimaryButton';
 const SingleNFTContainer = () => {
     return (
         <div className='SingleNFTContainer'>
-            <div className='lg:px-24 px-10 flex flex-row items-start'>
-                <div className='w-full flex-1'>
+            <div className='lg:mx-24 mx-10 flex flex-row items-start'>
+                <div className='w-full lg:flex-1 flex-[1.5]'>
                     <SingleNFTInfo name='The Orbitians' date={'Sep 30, 2022'} artist='Orbitian' artistIcon={fox}
                         description={
                             <div className='leading-relaxed'>
@@ -34,7 +34,7 @@ const SingleNFTContainer = () => {
                     />
                 </div>
 
-                <div className='flex-[1.3] w-full mx-auto flex justify-end mr-12'>
+                <div className='lg:flex-[1.3] flex-1 w-full mx-auto flex justify-end lg:mr-12'>
                     <AuctionTimer bgColor='#3B3B3B' button={
                         <div className='mt-5'>
                             <PrimaryButton hasIcon={false} text='Place Bid' width='full' />
