@@ -5,6 +5,8 @@ const WorkSansRegular = localFont({ src: '../../assets/fonts/WorkSans-Regular.tt
 const WorkSans = localFont({ src: '../../assets/fonts/WorkSans-SemiBold.ttf' })
 const spaceMono = localFont({ src: '../../assets/fonts/SpaceMono-Bold.ttf' })
 import globe from '@/assets/icons/Globe.svg'
+import AuctionTimer from '../molecules/AuctionTimer';
+import PrimaryButton from '../atoms/PrimaryButton';
 import TagComponent from '../atoms/TagComponent';
 
 
@@ -21,6 +23,14 @@ const SingleNFTInfo = ({ name, date, artist, artistIcon, description, details, t
                     Minted on {date}
                 </p>
             </div>
+
+            <div className='sm:hidden flex lg:flex-[1.3] flex-1 w-full mx-auto justify-end lg:mr-12'>
+                    <AuctionTimer bgColor='#3B3B3B' button={
+                        <div className='mt-5'>
+                            <PrimaryButton hasIcon={false} text='Place Bid' width='full' />
+                        </div>
+                    } />
+                </div>
 
             <div>
                 <p className={`${spaceMono.className} text-[#858584] mb-2 3xl:text-xl`}>
