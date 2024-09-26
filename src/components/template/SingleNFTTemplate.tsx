@@ -25,7 +25,7 @@ const SingleNFTTemplate = () => {
 
             </div>
 
-            <div className='w-full px-24 flex flex-col gap-6 text-white mb-24'>
+            <div className='w-full lg:px-24 px-10 flex flex-col gap-6 text-white mb-24'>
                 <div className='flex flex-row w-full justify-between items-center'>
                     <h3 className={`${WorkSans.className} text-4xl`}>
                         More from this artist
@@ -37,7 +37,14 @@ const SingleNFTTemplate = () => {
                     </button>
                 </div>
 
-                <ArtistNFTs itemsInRow={3} />
+
+                <div className='lg:block hidden'>
+                    <ArtistNFTs itemsInRow={3} />
+                </div>
+
+                <div className='lg:hidden block'>
+                    <ArtistNFTs itemsInRow={2} />
+                </div>
             </div>
 
             <Footer />

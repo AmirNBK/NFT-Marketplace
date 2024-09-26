@@ -14,29 +14,29 @@ const SingleNFTInfo = ({ name, date, artist, artistIcon, description, details, t
     return (
         <div className={`${WorkSansRegular.className} SingleNFTInfo flex flex-col items-start text-left text-white gap-6`}>
             <div>
-                <h2 className={`${WorkSans.className} text-5xl mb-3`}>
+                <h2 className={`${WorkSans.className} text-5xl 3xl:text-6xl mb-3`}>
                     {name}
                 </h2>
-                <p className='text-[#858584]'>
+                <p className='text-[#858584] 3xl:text-2xl'>
                     Minted on {date}
                 </p>
             </div>
 
             <div>
-                <p className={`${spaceMono.className} text-[#858584] mb-2`}>
+                <p className={`${spaceMono.className} text-[#858584] mb-2 3xl:text-xl`}>
                     Created By
                 </p>
 
-                <div className='flex flex-row items-center gap-2'>
-                    <Image src={artistIcon} alt='artistIcon' />
-                    <p className={`${WorkSans.className}`}>
+                <div className='flex flex-row items-center gap-2 3xl:mt-5'>
+                    <Image src={artistIcon} alt='artistIcon' className='3xl:size-8' />
+                    <p className={`${WorkSans.className} 3xl:text-xl`}>
                         {artist}
                     </p>
                 </div>
             </div>
 
 
-            <div className='w-10/12'>
+            <div className='w-10/12 3xl:text-2xl'>
                 <p className={`${spaceMono.className} text-[#858584] mb-2`}>
                     Description
                 </p>
@@ -47,7 +47,7 @@ const SingleNFTInfo = ({ name, date, artist, artistIcon, description, details, t
             </div>
 
             <div>
-                <p className={`${spaceMono.className} text-[#858584] mb-2`}>
+                <p className={`${spaceMono.className} text-[#858584] mb-2 3xl:text-2xl`}>
                     Details
                 </p>
 
@@ -56,7 +56,7 @@ const SingleNFTInfo = ({ name, date, artist, artistIcon, description, details, t
                         return (
                             <div className='flex flex-row items-center gap-2' key={index}>
                                 <Image src={globe} alt='globe' />
-                                <p>
+                                <p className='3xl:text-xl'>
                                     {item}
                                 </p>
                             </div>
@@ -67,7 +67,7 @@ const SingleNFTInfo = ({ name, date, artist, artistIcon, description, details, t
             </div>
 
             <div>
-                <p className={`${spaceMono.className} text-[#858584] mb-2`}>
+                <p className={`${spaceMono.className} text-[#858584] mb-2 3xl:text-xl`}>
                     Tags
                 </p>
 

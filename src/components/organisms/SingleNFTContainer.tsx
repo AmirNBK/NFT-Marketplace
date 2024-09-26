@@ -7,7 +7,7 @@ import PrimaryButton from '../atoms/PrimaryButton';
 const SingleNFTContainer = () => {
     return (
         <div className='SingleNFTContainer'>
-            <div className='px-24 flex flex-row items-start'>
+            <div className='lg:px-24 px-10 flex flex-row items-start'>
                 <div className='w-full flex-1'>
                     <SingleNFTInfo name='The Orbitians' date={'Sep 30, 2022'} artist='Orbitian' artistIcon={fox}
                         description={

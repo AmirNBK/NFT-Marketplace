@@ -57,8 +57,8 @@ const AuctionTimer: React.FC<TimerProps> = ({ bgColor, button }) => {
     return (
         <div 
         style={{backgroundColor : `${bgColor}`}}
-        className={`${spaceMono.className} flex flex-col p-8 text-white rounded-3xl bg-opacity-50 min-w-[240px] sm:w-[295px] w-full max-md:px-5`}>
-            <div className={`${spaceMonoRegular.className} text-xs leading-none`}>Auction ends in:</div>
+        className={`${spaceMono.className} flex flex-col p-8 text-white rounded-3xl bg-opacity-50 min-w-[240px] sm:w-[295px] 3xl:w-[400px] w-full max-md:px-5`}>
+            <div className={`${spaceMonoRegular.className} text-xs 3xl:text-lg leading-none`}>Auction ends in:</div>
             <div className="flex gap-2.5 items-start mt-2.5 w-full whitespace-nowrap">
                 {timeUnits.map((unit, index) => (
                     <React.Fragment key={unit.label}>
@@ -66,7 +66,7 @@ const AuctionTimer: React.FC<TimerProps> = ({ bgColor, button }) => {
                             <div className="text-4xl font-bold leading-tight capitalize">
                                 {unit.value.toString().padStart(2, '0')}
                             </div>
-                            <div className={`${spaceMonoRegular.className} flex-1 mt-1.5 text-xs leading-none`}>{unit.label}</div>
+                            <div className={`${spaceMonoRegular.className} flex-1 mt-1.5 text-xs 3xl:text-sm  leading-none`}>{unit.label}</div>
                         </div>
                         {index < timeUnits.length - 1 && (
                             <div className="text-3xl font-bold leading-snug capitalize">:</div>
