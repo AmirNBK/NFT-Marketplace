@@ -57,10 +57,10 @@ const MarketplaceTemplate = () => {
 
     return (
         <main className="flex min-h-screen flex-col pt-8  bg-[#2B2B2B] justify-between">
-            <div className="px-28 w-full">
+            <div className="xl:px-28 lg:px-20 sm:px-14 px-8 w-full">
                 <Header />
             </div>
-            <div className='w-full mt-20'>
+            <div className='w-full sm:mt-20 mt-10'>
                 <MarketplaceSearchBar />
             </div>
             <Box sx={{ width: '100%' }}>
@@ -71,7 +71,7 @@ const MarketplaceTemplate = () => {
                                 <p className=' normal-case'>
                                     NFTs
                                 </p>
-                                <div className={`${spaceMono.className} amount rounded-2xl text-sm text-white px-2 py-1`}>
+                                <div className={`${spaceMono.className} amount rounded-2xl text-sm text-white px-2 py-1  sm:block hidden`}>
                                     302
                                 </div>
                             </div>
@@ -81,7 +81,7 @@ const MarketplaceTemplate = () => {
                                 <p className='normal-case'>
                                     Collections
                                 </p>
-                                <div className={`${spaceMono.className} amount rounded-2xl text-sm text-white px-2 py-1`}>
+                                <div className={`${spaceMono.className} amount rounded-2xl text-sm text-white px-2 py-1  sm:block hidden`}>
                                     67
                                 </div>
                             </div>
@@ -89,8 +89,7 @@ const MarketplaceTemplate = () => {
                     </Tabs>
                 </Box>
                 <CustomTabPanel value={value} index={0}>
-
-                    <div className=' grid grid-cols-3 mt-14 gap-10 w-10/12'>
+                    <div className=' grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-14 gap-10 xl:w-10/12 w-11/12'>
                         <NFTComponent bgColor='#2B2B2B' image={image1} title='Distant Galaxy' creatorPic={fox} creator='MoonDancer' price={1.63} bid={0.33} />
                         <NFTComponent bgColor='#2B2B2B' image={image2} title='Life On Edena' creatorPic={fox} creator='NebulaKid' price={1.63} bid={0.33} />
                         <NFTComponent bgColor='#2B2B2B' image={image3} title='AstroFiction' creatorPic={fox} creator='Spaceone' price={1.63} bid={0.33} />
@@ -100,7 +99,7 @@ const MarketplaceTemplate = () => {
                     </div>
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={1}>
-                    <div className=' grid grid-cols-3 mt-14 gap-10 w-10/12'>
+                    <div className=' grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mt-14 gap-10 xl:w-10/12 w-11/12'>
                         <NFTComponent bgColor='#2B2B2B' image={image1} title='Distant Galaxy' creatorPic={fox} creator='MoonDancer' price={1.63} bid={0.33} />
                         <NFTComponent bgColor='#2B2B2B' image={image6} title='AstroFiction' creatorPic={fox} creator='Spaceone' price={1.63} bid={0.33} />
                     </div>
@@ -126,6 +125,16 @@ const MarketplaceTemplate = () => {
 
                     .css-1ujnqem-MuiTabs-root {
                     padding: 0px 176px;
+
+                    @media all and (max-width: 1024px) {
+                        padding: 0px 80px;
+
+                    }
+
+                    @media all and (max-width: 640px) {
+                        padding: 0px 10px;
+
+                    }
                     
                     }
                     `
