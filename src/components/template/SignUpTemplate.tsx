@@ -5,7 +5,8 @@ import Header from "@/components/organisms/Header";
 
 const SignUpTemplate = () => {
     
-    console.log(test);
+    
+    console.log(test2);
     return (
         <main className="flex min-h-screen flex-col items-center pt-8 bg-[#2B2B2B] justify-between">
             <div className="xl:px-28 lg:px-20 sm:px-14 px-8 w-full">
