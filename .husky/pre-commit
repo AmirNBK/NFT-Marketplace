@@ -1,1 +1,5 @@
+# Run Next.js lint
 next lint
+
+# Run ESLint to check for errors or undefined variables
+npx eslint . --rule 'no-undef: error'
